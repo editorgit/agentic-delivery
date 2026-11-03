@@ -1,0 +1,13 @@
+{
+  "name": "agentic-delivery",
+  "owner": {
+    "name": "Alexander Budanov"
+  },
+  "plugins": [
+    {
+      "name": "delivery",
+      "source": "./",
+      "description": "Jira → spec → plan gate → implement → Codex review loop → MR, plus a morning brief."
+    }
+  ]
+}

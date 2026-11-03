@@ -1,0 +1,10 @@
+{
+  "name": "delivery",
+  "version": "0.1.0",
+  "description": "From a Jira issue to a merge request with Claude Code: spec file, plan gate, implementation, cross-model review by Codex, polish, MR, verification of a bot's AI review, retrospective — plus a morning brief that launches each issue in its own worktree session.",
+  "author": {
+    "name": "Alexander Budanov"
+  },
+  "license": "MIT",
+  "keywords": ["agents", "claude-code", "codex", "jira", "gitlab", "code-review", "workflow"]
+}

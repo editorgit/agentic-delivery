@@ -1,0 +1,25 @@
+{
+  "base_branch": "main",
+  "key_pattern": "[A-Z][A-Z0-9]+-\\d+",
+  "jira": {
+    "statuses": {
+      "blocked": ["Blocked", "On Hold"],
+      "review": ["In Review", "Code Review"],
+      "qa": ["Ready for QA", "In QA", "Testing"],
+      "backlog": ["Backlog"]
+    }
+  },
+  "tests": {
+    "command": "pytest {paths} --reuse-db"
+  },
+  "commit": {
+    "format": "{key}: {type}: {summary}"
+  },
+  "review": {
+    "codex_model": "gpt-5.5",
+    "reasoning_effort": "xhigh",
+    "checklist": ".claude/review-checklist.md"
+  },
+  "docs_check": "python -m tools.docs_check",
+  "ai_review_bot": "code-review-bot"
+}
